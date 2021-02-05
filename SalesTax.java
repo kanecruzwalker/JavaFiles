@@ -6,13 +6,25 @@ public class SalesTax {
     {
         Scanner keyboard = new Scanner (System.in);
         
+        // Variable Declaration
         // BidDecimal for monetary values and decimals
         BigDecimal purchasePrice;
+        double stateTax;
+        double countyTax;
+        BigDecimal totalSalesTax;
+        BigDecimal purchaseStateTax;
+        BigDecimal purchaseCountyTax;
+
+        stateTax = .04;
+        countyTax = .02;
+
 
         System.out.print("What is the price for this purchase?");
         purchasePrice = keyboard.nextBigDecimal();
 
         System.out.println("Purchase Price: " + purchasePrice);
+
+        System.out.println(stateTax + countyTax);
     }
 }
 
