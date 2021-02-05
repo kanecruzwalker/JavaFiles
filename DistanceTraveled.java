@@ -1,6 +1,14 @@
+import java.util.Scanner;
+
 public class DistanceTraveled {
     public static void main(String[] args)
     {
+        Scanner keyboard = new Scanner (System.in);
+       
+        // User Input Variables
+        int guess;
+
+        // Calculation Variables
         int speed;
         int time1;
         int time2;
@@ -23,10 +31,22 @@ public class DistanceTraveled {
         distance3 = speed * time3;
         
         // Output
-        System.out.println(speed);
-        System.out.println(distance1);
-        System.out.println(distance2);
-        System.out.println(distance3);
+        // used .print() to interact with user
+        // saving their guess to compare to actual value
+        // future development, boolean, if guess = proper distance congrats, else, the actual distance is
+        System.out.print("If you were driving at 60 miles an hour, how far will you have driven if 5 hours have passed?");
+        guess = keyboard.nextInt();
+        System.out.println("You guessed " + guess + ".The actual distance is " + distance1+ ".");
+
+        System.out.print("If you were driving at 60 miles an hour, how far will you have driven if 8 hours have passed?");
+        guess = keyboard.nextInt();
+        System.out.println("You guessed " + guess + ". The actual distance is " + distance2 + ".");
+
+        System.out.print("If you were driving at 60 miles an hour, how far will you have driven if 12 hours have passed?");
+        guess = keyboard.nextInt();
+        System.out.println("You guessed " + guess + ". The actual distance is " + distance3 + ".");
+        
+        System.out.println("That's all folks. Thanks for playing");
         //Design a program that displays the distance a car will travel if going 
         //60 mph at 5, 8, & 12 hrs.
 
