@@ -5,6 +5,8 @@ public class SalesTax {
     public static void main(String [] args)
     {
         Scanner keyboard = new Scanner (System.in);
+        
+        // BidDecimal for monetary values and decimals
         BigDecimal purchasePrice;
 
         System.out.print("What is the price for this purchase?");
