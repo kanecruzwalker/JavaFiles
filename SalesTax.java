@@ -9,8 +9,8 @@ public class SalesTax {
         // Variable Declaration
         // BidDecimal for monetary values and decimals
         BigDecimal purchasePrice;
-        double stateTax;
-        double countyTax;
+        Double stateTax;
+        Double countyTax;
         BigDecimal totalSalesTax;
         BigDecimal purchaseStateTax;
         BigDecimal purchaseCountyTax;
@@ -24,7 +24,9 @@ public class SalesTax {
 
         System.out.println("Purchase Price: " + purchasePrice);
 
-        System.out.println(stateTax + countyTax);
+        System.out.println("StateTax: $" + stateTax  + ".");
+        System.out.println("StateTax: $" + countyTax  + ".");
+
     }
 }
 
